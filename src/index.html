@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>EventListeners!</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +13,22 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
-    </div>
+    <input id="hello" type="button" value="Press to show 'Hello world'" />
+    <div class="wrap"></div>
+    <input id="firstNumber" type="text" value="" /> +
+    <input id="secondNumber" type="text" value="" /> =
+    <input id="resultNumber" type="text" value="" />
+    <input type="button" value="Calculate" onclick="calculateSumListener();" />
+    <div id="firstDiv">My first div</div>
+    <div id="secondDiv">My second div</div>
+    <input type="button" value="Hide first div" onclick="myEventListener();" />
+    <button id="theGreen" style="background: green; color: white">
+      I am a green button
+    </button>
+    <h1 id="screen1">Loading...</h1>
+    <button onclick="increaseCounter();">Increase</button>
+    <button onclick="decreaseCounter();">Decrease</button>
+    <h1 id="screen2">Loading...</h1>
+    <button onclick="turnChanger();">Switch turn</button>
   </body>
 </html>
